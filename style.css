@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/background.jpg) no-repeat top;
+    background-size: cover;
+    background-color: #123;
+}
+.inserts{
+    position: absolute;
+    top:0;
+    padding: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ddf2;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+.inserts #city{
+    width: 300px;
+    padding: 3px 15px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: #eef;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.inserts #city:focus{
+    outline: none;
+}
+.inserts #submit{
+    background-color: #123;
+    border: 1px solid #0002;
+    padding: 1px 10px;
+    color: #fff;
+    font-weight: 900;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+}
+.inserts #submit:hover{
+    background-color: #012;
+}
+.inserts #submit:active{
+    background-color: #001;
+}
+.inserts #submit:focus{
+    outline: none;
+}
+
+.loading{
+    width: 50px;
+    height: 50px;
+    animation: loading 0.7s linear infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);}
+}
+
+.card{
+    background-color: #cdf5;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 300px;
+    display: flex;
+    height: 75%;
+    min-height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #123;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px 10px #0003,
+                0px 0px 30px 20px inset #fff3;
+}
+h1{
+    font-size: 50px;
+}
+.temp{
+    font-size: 30px;
+}
+.humidity{
+    font-size: 25px;
+}
+.description{
+    font-size: 20px;
+}
+.emoji{
+    font-size: 40px;
+}
